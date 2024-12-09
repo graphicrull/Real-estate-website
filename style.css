@@ -1,0 +1,653 @@
+@font-face {
+  font-family: Satoshi;
+  src: url("Assets/fonts/Satoshi-Variable.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Satoshi;
+}
+/* body {
+  background-color: aqua;
+} */
+
+/* hero section starts */
+.hero_area {
+  position: relative;
+}
+.hero_image img {
+  width: 100%;
+  height: 1024px;
+  /* object-fit: cover; */
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1024px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* header starts */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 26px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fcfcfc;
+  font-size: 14px;
+  font-weight: 400;
+}
+.contuct_us {
+  background-color: #fff;
+  padding: 10px 18px;
+  border-radius: 12px;
+}
+.contuct_us a {
+  color: #18181b;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+/* header ends */
+.hero_content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 80px 56px 80px;
+  display: flex;
+  align-items: last baseline;
+  justify-content: space-between;
+}
+.hero_info {
+  display: flex;
+  align-items: last baseline;
+}
+.hero_info h1 {
+  font-size: 100px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 100px;
+}
+.hero_info h1 span {
+  font-weight: 700;
+  color: #ffff;
+}
+.hero_info img {
+  border: 2px solid #fff;
+  padding: 24px;
+  border-radius: 100px;
+}
+
+.gallery_section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: #fff;
+  padding: 8px;
+  border-radius: 12px;
+}
+.gallery_section img {
+  width: 196px;
+  height: 140px;
+  border-radius: 12px;
+}
+/* hero section ends */
+
+/* About section starts */
+.about {
+  padding: 80px;
+}
+
+/* about info starts */
+.about_info {
+  display: flex;
+  /* align-items: first baseline; */
+  justify-content: space-between;
+  margin-bottom: 56px;
+}
+.headline_btn h2 {
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 62px;
+  letter-spacing: -2%;
+  color: #18181b;
+  margin-bottom: 32px;
+}
+.headline_btn button {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 12px;
+  border: none;
+  background-color: #18181b;
+}
+
+.head_info p {
+  width: 662px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 31px;
+  color: #70707b;
+}
+.head_info > p {
+  margin-bottom: 32px;
+}
+/* about info ends */
+.about_image_container {
+  display: flex;
+  /* gap: 32px; */
+  justify-content: space-between;
+}
+.about_image_container h3 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #18181b;
+  margin-bottom: 8px;
+}
+.about_image_container p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #70707b;
+  line-height: 24px;
+}
+
+.about_image_one img {
+  width: 316px;
+  height: 290px;
+  margin-bottom: 24px;
+}
+.about_image_two img {
+  width: 402px;
+  height: 340px;
+  margin-top: 168px;
+  margin-bottom: 24px;
+}
+.about_image_three img {
+  width: 498px;
+  height: 399px;
+  margin-bottom: 24px;
+}
+/* About section ends */
+
+/* listing section starts */
+.listing_main_container {
+  padding: 80px;
+  /* background-color: cadetblue; */
+}
+.listing_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 56px;
+}
+.listing_header h2 {
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 62px;
+  color: #18181b;
+  letter-spacing: -2%;
+}
+.listing_header p {
+  width: 573px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 31px;
+  color: #70707b;
+}
+
+/* listing body */
+.listing_first_row,
+.listing_secound_row,
+.listing_third_row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+/* At first i tried to do it by using button for avoiding using display flex. but it didn't work properly, so i got to return to to flex */
+/* .left_badge button {
+  padding: 8px 12px;
+  border-radius: 22px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fcfcfc;
+  background-color: #18181b;
+  border: none;
+}
+.left_badge button img {
+  padding-right: 8px;
+  width: 25px;
+} */
+
+.listing_image_container {
+  position: relative;
+}
+.badges {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.badges p {
+  color: #fff;
+}
+.left_badge {
+  /* width: 99px; */
+  padding: 8px 12px;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #18181b;
+}
+.right_badge {
+  padding: 8px 12px;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #18181b;
+}
+.listing_info_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1.5px solid #e4e4e7;
+}
+.location h3 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #18181b;
+}
+.location p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #70707b;
+}
+.location p i {
+  padding-right: 8px;
+  color: #18181b;
+}
+.pricing h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #18181b;
+}
+
+/* option bar */
+.listing_option_bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.listing_option_bar p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #70707b;
+}
+.bathroom,
+.bedroom,
+.area {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.listing_main_container button {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  padding: 10px 25px;
+  background-color: #18181b;
+  border-radius: 12px;
+  margin-top: 56px;
+  margin-left: 576px;
+}
+/* listing section ends */
+
+/* faq section starts */
+.faq_main_container {
+  padding: 80px;
+  display: flex;
+  gap: 56px;
+}
+
+.faq_left h2 {
+  font-size: 52px;
+  font-weight: 400;
+  color: #18181b;
+  line-height: 62px;
+  margin-bottom: 24px;
+}
+.faq_left {
+  width: 40%;
+}
+.faq_left p {
+  /* width: 532px; */
+  font-size: 20px;
+  font-weight: 400;
+  color: #70707b;
+  line-height: 31px;
+  margin-bottom: 56px;
+}
+.faq_right {
+  width: 60%;
+}
+.faq_right {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+.option_rows {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+}
+.option_rows p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #70707b;
+}
+
+.help_option_bar .option_rows p {
+  font-size: 18px;
+  font-weight: 700;
+  color: #18181b;
+}
+.help_option_bar .description p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #18181b;
+  line-height: 24px;
+  padding: 0 16px 16px 16px;
+}
+/* faq section ends */
+
+/* tips section starts */
+.tips_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 56px;
+}
+.tips_header h2 {
+  font-size: 45px;
+  font-weight: 400;
+  color: #18181b;
+  letter-spacing: -2%;
+}
+.tips_header p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #70707b;
+}
+.tips_main_container {
+  padding: 80px;
+}
+.tips_body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 92px;
+}
+.tips_body img {
+  margin-bottom: 16px;
+}
+.tips_body p {
+  color: #70707b;
+  margin-bottom: 16px;
+}
+.tips_body p span {
+  padding-left: 16px;
+}
+.tips_body p span i {
+  padding-right: 4px;
+}
+.tips_body h3 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #18181b;
+  line-height: 28px;
+}
+
+.slide_option_bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slide_option_bar i {
+  padding-right: 8px;
+}
+.arrow_side i {
+  font-size: 25px;
+  color: #18181b;
+  padding-left: 8px;
+}
+
+/* tips section ends */
+
+/* contact section starts */
+.contact_bg_image {
+  width: 100%;
+  height: 648px;
+  padding: 40px 16px;
+  position: relative;
+}
+.contact_image_container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.contact_bg_image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 36px;
+  object-fit: cover;
+}
+.overlay_two {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #18181b;
+  width: 100%;
+  height: 100%;
+  border-radius: 36px;
+  opacity: 50%;
+}
+.contact_info {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.contact_info {
+  width: 100%;
+  padding: 110px 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact_header h2 {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 76.8px;
+  color: #fcfcfc;
+  margin-bottom: 24px;
+  /* color: navy; */
+}
+.contact_header p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 31px;
+  color: #fcfcfc;
+  /* color: navy; */
+}
+.contact_field form {
+  width: 444px;
+  background-color: #fcfcfc;
+  /* background-color: antiquewhite; */
+  padding: 24px;
+  border-radius: 24px;
+}
+.contact_field form input,
+button {
+  display: block;
+}
+.contact_field form input {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  color: #18181b;
+  background-color: none;
+  outline: none;
+  border: none;
+  margin-bottom: 16px;
+}
+.contact_field form input.last_input {
+  margin-bottom: 2px;
+}
+
+.contact_field form textarea {
+  height: 204px;
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #e4e4e7;
+  outline: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: #70707b;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.contact_field form button {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffff;
+  padding: 10px;
+  background-color: #18181b;
+  border-radius: 12px;
+}
+/* contact section ends */
+
+/* Footer section starts */
+footer {
+  padding: 80px 56px 40px 56px;
+  background-color: #18181b;
+}
+
+.footer_up {
+  display: flex;
+  align-items: first baseline;
+  justify-content: space-between;
+  border-bottom: 1px solid #70707b;
+  padding-bottom: 80px;
+}
+.footer_info_left h3 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38px;
+  color: #fcfcfc;
+  margin-bottom: 32px;
+}
+.footer_info_left p {
+  display: inline-block;
+  padding-right: 24px;
+  color: #fcfcfc;
+}
+.footer_info_left p span {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 40px;
+  color: #ffffffa8;
+}
+
+.nvaigations_container {
+  display: flex;
+  align-items: first baseline;
+  gap: 86px;
+}
+.navigation_one p {
+  color: #ffffffa8;
+  margin-bottom: 16px;
+}
+.navigtaion {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.navigtaion > p {
+  color: #ffffffa8;
+  margin-bottom: 16px;
+}
+.navigtaion p {
+  padding-bottom: 16px;
+}
+.navigtaion p a {
+  text-decoration: none;
+  color: #fcfcfc;
+  font-weight: 400;
+}
+
+.navigation_two > p {
+  color: #ffffffa8;
+  margin-bottom: 16px;
+}
+.navigation_two p {
+  margin-bottom: 16px;
+}
+.navigation_two p a {
+  text-decoration: none;
+  color: #fcfcfc;
+  font-weight: 400;
+}
+
+.footer_down {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+  padding: 18px 0;
+}
+.footer_down span {
+  font-size: 14px;
+  color: #70707b;
+  font-weight: 500;
+}
+.footer_down p {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 500;
+}
+.footer_down p i {
+  padding-left: 10px;
+}
+/* Footer section ends */
